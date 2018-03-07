@@ -1,0 +1,7 @@
+<button type='default' bindtouchstart='startrecorderHandel' bindtouchend="sendrecorderHandel">开始8录音</button>
+<view>
+  你说的话是:
+  <view>
+    {{msg}}
+  </view>
+</view>

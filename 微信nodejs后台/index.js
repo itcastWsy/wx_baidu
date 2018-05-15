@@ -25,6 +25,7 @@ app.post('/post', function (req, res, next) {
   //上传完成后处理
   form.parse(req, function (err, fields, files) {
     var filesTemp = JSON.stringify(files, null, 2);
+    // fffile 为微信 上传录音文件代码中 定义的 name属性
     var inputFile = files.fffile[0];
     var uploadedPath = inputFile.path;
     var command = ffmpeg();

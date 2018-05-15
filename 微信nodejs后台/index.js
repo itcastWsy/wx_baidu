@@ -1,5 +1,6 @@
 var express = require('express');
 var app = express();
+var path=require("path");
 var fs = require('fs');
 var Multiparty = require('multiparty');
 // 转码工具
@@ -20,7 +21,7 @@ var client = new AipSpeechClient(APP_ID, API_KEY, SECRET_KEY);
 app.post('/post', function (req, res, next) {
   //生成multiparty对象，并配置上传目标路径
   var form = new Multiparty.Form({
-    uploadDir: 'uploads/'
+    uploadDir: path.join(__dirname,'uploads/')
   });
   //上传完成后处理
   form.parse(req, function (err, fields, files) {

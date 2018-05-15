@@ -4,7 +4,7 @@ const recorderManager = wx.getRecorderManager();
 function sendRecord(src) {
   var obj = {
     // 已经在花生壳中映射到本地端口-3001 
-    url: "http://xxx:34306/post",
+    url: "http://127.0.0.1:3001/post",
     filePath: src,
     name: "fffile",
     header: {

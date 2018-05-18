@@ -222,6 +222,3 @@ var server = app.listen(3001, function () {
 
 ![1520432347147](medias/1520432347147.png)
 
-# 联系方式
-
-可以通过邮件联系 yeah126139163@163.com
